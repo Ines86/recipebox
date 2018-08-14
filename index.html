@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recipe Box</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Recipe Box</h1>
+            <ul>
+                <li>
+                    <label>Show:</label>
+                    <select class="show-category">
+                        <option value="all">All</option>
+                        <option value="breakfast">Breakfast</option>
+                        <option value="dessert">Dessert</option>
+                        <option value="dinner">Dinner</option>
+                        <option value="drink">Drink</option>
+                    </select>
+                </li>
+                <li>
+                    <label>Sort by:</label>
+                    <select class="sort">
+                        <option value="timeAsc">Time (ascending)</option>
+                        <option value="timeDsc">Time (descending)</option>
+                        <option value="difficultyAsc">Difficulty (ascending)</option>
+                        <option value="difficultyDsc">Difficulty (descending)</option>
+                    </select>
+                </li>
+                <li>
+                    <button id="add-recipe">Add Recipe</button>
+                </li>
+            </ul>
+        </header>
+        <div id="recipe-box">
+        </div>
+
+        <div id="recipeModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="edit">Edit Recipe</button>
+                    <span id="message"></span>
+                    <span class="closeBtn">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="recipe-img">
+                    </div>
+                    <div class="recipe-content">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="scripts/app.js"></script>
+</body>
+
+</html>
